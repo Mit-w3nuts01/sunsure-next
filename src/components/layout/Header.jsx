@@ -25,10 +25,10 @@ const Header = ({menuData}) => {
 					<nav className="navigation_main flxrow">
                         <ul className="main-menu flxrow">
 							{menuData.menuItems.nodes.map((item , index) => (
-								<li key={index} className={item?.childItems?.nodes?.length > 0 && 'menu-item-has-children'}>
+								<li key={index} className={(item?.childItems?.nodes?.length > 0) ? 'menu-item-has-children' : ''}>
 									<Link href={item.uri}>{item.label}</Link>
 									{item?.childItems?.nodes?.length > 0 &&
-										<ul key={index} className={item?.childItems?.nodes?.length > 0 ? 'sub-menu' : ' sub-menu menu-item-has-children'}>
+										<ul key={index} className={(item?.childItems?.nodes?.length > 0) ? 'sub-menu' : ' sub-menu menu-item-has-children'}>
 											{item?.childItems.nodes.map((itemchild , indexchild) =>(
 												
 													<li key={indexchild}>

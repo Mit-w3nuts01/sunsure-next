@@ -19,7 +19,6 @@ const Abouthome = () => {
 	if(!homeAbout){
 		return ''
 	}
-	console.log(homeAbout);
 	
 	return (
 		<div className="home_about_sec">
@@ -33,7 +32,8 @@ const Abouthome = () => {
 								</div>
 							}
 							<h2>{homeAbout.asLeftTitle}</h2>
-							<p>{homeAbout.asDescription}</p>
+							<p dangerouslySetInnerHTML={{__html: homeAbout.asDescription}} />
+							{/* <p>{homeAbout.asDescription}</p> */}
 							{homeAbout.asLeftButton && <div className="w3n_link_box">
 								<Link href={homeAbout.asLeftButton.url} className="w3n_link" target={homeAbout.asLeftButton.target}>{homeAbout.asLeftButton.title} </Link>
 							</div>}

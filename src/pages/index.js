@@ -5,6 +5,7 @@ import styles from '@/styles/Home.module.css'
 import Homebanner from '@/components/Homebanner'
 import Abouthome from '@/components/Abouthome'
 import Homemaking from '@/components/Homemaking'
+import Oursolution from '@/components/ourSolution'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -38,7 +39,12 @@ export default function Home({homepagedata}) {
 			<section className="contain_wapper">
 				<div className="home_wapper">
 					<Abouthome />
-					<Homemaking />
+					<div className="home_making_power_sec">
+						<div className="container">
+							<Homemaking />
+						</div>
+					</div>
+					<Oursolution />
 				</div>
 			</section>
 		</>
