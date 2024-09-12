@@ -73,3 +73,52 @@ export const Homeaboutdata =  {
 	}]
 }
 
+
+export const customTab =  {
+	"tabdata": [{
+		id: 'tab1',
+		tabTitle: "RE 100 Solutions",
+		tabDetail: "With expertise in utility scale and distributed RE projects, Sunsure caters to commercial and industrial (C&I) clients through open access and behind the meter solutions.",
+		accordiondata:[
+			{
+				accordiontitle: "RTC Power",
+				accordiontext: "Sunsure delivers consistent, Round-the-Clock renewable energy solutions by integrating a bespoke mix of solar, wind, and battery storage, complemented by savvy energy trading. Our approach is meticulously tailored to meet the unique needs of sectors that face challenges in reducing carbon emissions, like Steel, Cement, and Data Centers."
+			},{
+				accordiontitle: " Energy Storage",
+				accordiontext: "Harnessing advanced Energy Storage Systems (ESS), Sunsure delivers steadfast and dispatchable renewable power to Commercial & Industrial (C&I) clients, ensuring uninterrupted energy supply, even in constant-load environments."
+			},{
+				accordiontitle: " Green Attributes",
+				accordiontext: "Sunsure can help you strategize and acquire the right kind of Green Attributes to offset your emissions via Renewable Energy Certificates (RECs), Carbon Credits, and other key market instruments. This service is meticulously designed to help Commercial & Industrial (C&I) clients meet and exceed their Environmental, Social, and Governance (ESG) commitments with full compliance."
+			},
+		]
+	},{
+		id: 'tab2',
+		tabTitle: "Green Energy Open Access",
+		tabDetail: "Sunsure Energy offers Open Access Solar plants that can provide over 70% of a large industrial power demand. The power is delivered through the existing grid connection, and any excess power can be saved for later use.",
+		accordiondata:[
+			{
+				accordiontitle: "Hybrid PPAs",
+				accordiontext: "Our Hybrid PPAs integrate the strengths of both solar and wind energy, offering a more consistent and reliable power supply compared to standalone solar or wind systems. This innovative approach significantly enhances the Capacity Utilization Factor (CUF), ensuring that your business benefits from a higher and more stable energy output."
+			},{
+				accordiontitle: "Solar PPAs ",
+				accordiontext: "Sunsure Energy uses Round-the-Clock (RTC) power. RTC power is a 24-hour period during which renewable energy is supplied with the help of battery storage."
+			},{
+				accordiontitle: " Wind PPAs",
+				accordiontext: "Sunsure Energy uses Round-the-Clock (RTC) power. RTC power is a 24-hour period during which renewable energy is supplied with the help of battery storage."
+			},
+		]
+	},{
+		id: 'tab3',
+		tabTitle: "Green Energy On-Site",
+		tabDetail: "We offer long-term power purchase agreements (PPAs) for on-site renewable energy power plants. These PPAs allow industries to offset more than 70% of their power usage with RE technologies like wind, solar, and battery storage.",
+		accordiondata:[
+			{
+				accordiontitle: "Rooftop",
+				accordiontext: "Sunsure Energy uses Round-the-Clock (RTC) power. RTC power is a 24-hour period during which renewable energy is supplied with the help of battery storage."
+			},{
+				accordiontitle: "Ground Mounted",
+				accordiontext: "Sunsure Energy uses Round-the-Clock (RTC) power. RTC power is a 24-hour period during which renewable energy is supplied with the help of battery storage."
+			}
+		]
+	}]
+}

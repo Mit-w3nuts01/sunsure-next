@@ -31,6 +31,7 @@
 html { margin: 0; padding: 0;}
 body { margin: 0; padding: 0; font-family: 'Anek Latin'; font-size: 18px; background:var(--black-bg);letter-spacing: 0; line-height: 138.889%; font-weight: normal; color: var(--white-txt); }
 
+.loader_main { position: fixed; top: 0; left: 0; z-index: 99999; background:var(--black-bg); width: 100vw; height: 100vh; display: -ms-flexbox; display: flex; align-items: center; align-content: center; justify-content: center; }
 
 input, select, textarea, button { outline: none; box-shadow: none; font-family: inherit;}
 input[type=text]::-moz-placeholder,
@@ -422,9 +423,13 @@ height: 85px; position: relative; display: inline-block; margin: 0 10px 0 30px; 
 .solution_wrap .nav-tabs li { margin: 0; border: none !important; }
 .job_opening_top .nav-tabs li button,
 .sub_service_top .nav-tabs li button,
+.tab_menu_custom a,
 .solution_wrap .nav-tabs li button { border: none; padding: 0 22px; margin: 0; border: solid 1px var(--green-bg) !important; background-color: transparent; border-radius: 50px; min-height: 52px; text-align: center; font-size: 18px;font-weight: 600;line-height: 133.333%;letter-spacing: 0.18px; color: var(--orange-txt); }
+.tab_menu_custom { display: -ms-flexbox; display: flex; justify-content: center; width: 100%; }
+.tab_menu_custom a { display: -ms-flexbox; display: flex; align-items: center; align-content: center; justify-content: center; }
 .job_opening_top .nav-tabs li button.active,
 .sub_service_top .nav-tabs li button.active,
+.tab_menu_custom a.active,
 .solution_wrap .nav-tabs li button.active { border: solid 1px var(--orange-bg) !important; background-color: var(--orange-bg); color: var(--white-txt); }
 .solution_wrap .tab-content { padding: 60px; width: 100%; position: relative; }
 .solution_wrap_box { width: 100%; position: relative; }
@@ -1501,3 +1506,7 @@ body.modal_list_open .modal_list_dtl { -webkit-transform: translateX(0); -moz-tr
 .closed_icon_map a svg { width: 100%; height: auto; }
 .closed_icon_map a svg path { stroke-width: 3px; }
 .first-files .wpcf7-form-control-wrap .wpcf7-not-valid-tip{ display: none; }
+
+.data_tabs p { color: var(--black-txt); }
+.data_tabs { width: 100%; display: none; }
+.data_tabs.active { display: block; }
